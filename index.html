@@ -5,10 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Burger House</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   
-  <h1>Hello world!</h1>
+  <header class="header">
+    <div class="header__container container">
+      
+      <div class="header logo">
+        <img src="images/Logo.svg" alt="logo burger house" class="logo__image">
+      </div>
+
+      <nav class="header nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Почему у нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Меню бургеров</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Оформление заказа</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="currency" title="Изменить валюту">$</div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="main-content">
+      <div class="container">
+
+        <div class="main-content__info">
+          <span class="main-content__small-info">Новое меню</span>
+          <h1 class="main-content__title">Бургер Чеддер</h1>
+          <p class="main-content__text">Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.</p>
+          <div class="main-content__action">
+            <button class="main-content__action-btn button">Смотреть меню</button>
+          </div>
+        </div>
+
+        <img src="images/main_burger.png" alt="Big burger" class="main-contnent__image">
+
+      </div>
+    </section>
+  </main>
+
 
 </body>
 </html>
