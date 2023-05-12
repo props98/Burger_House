@@ -1,4 +1,4 @@
-# Burger House landing
+# Burger House landing by «Айтилогия»
 
 ## День первый знакомство с Фронтендом
 
