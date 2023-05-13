@@ -134,6 +134,6 @@ body {
 .main-contnent__image {
   position: absolute;
   top: -73px;
-  left: calc(100% - 70%);
+  left: calc(100% - 85%);
   z-index: -1;
 }
