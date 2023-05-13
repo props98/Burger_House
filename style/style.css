@@ -20,7 +20,7 @@ body {
   font-size: 18px;
   line-height: 22px;
 
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("../images/main_bg.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 260px;
+  width: 100%;
   height: 62px;
   background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
   border-radius: 8px;
@@ -50,6 +50,15 @@ body {
 
 .button:hover {
   background: linear-gradient(95.61deg, #8b5016 0%, #866710 100%);
+}
+
+.common-title {
+  font-family: 'Merriweather';
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .header__container {
@@ -131,9 +140,191 @@ body {
   margin-bottom: 56px;
 }
 
+.main-content__btn {
+  max-width: 260px;
+  height: 62px;
+}
+
 .main-contnent__image {
   position: absolute;
   top: -73px;
-  left: calc(100% - 85%);
+  left: calc(100% - 73%);
   z-index: -1;
+}
+
+.why {
+  background-image: url('../images/whybg.png');
+  background-repeat: no-repeat;
+}
+
+/* .why__title {
+  font-family: 'Merriweather';
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+} */
+
+.why__items {
+  display: grid;
+  justify-content: center;
+  padding: 60px 0 180px;
+  gap: 100px;
+  grid-template-columns: repeat(3, 312px);
+}
+
+.why__item {
+  text-align: center;
+}
+
+.why__item-title {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 24px 0;
+}
+
+.why__item-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.products {
+  background: url('../images/burgers_bg.png') center center / 1400px no-repeat;
+  padding-bottom: 180px;
+}
+
+.products__items {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  justify-content: center;
+  gap: 24px;
+  padding-top: 60px;
+}
+
+.products__item {
+  padding: 30px;
+  background: #211A16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+}
+
+.products__item-image {
+  height: 250px;
+}
+
+.products__item-img {
+  max-width: 100%;
+}
+
+.products__item-title {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 24px 0;
+}
+
+.products__item-text {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.products__item-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__item-price {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.products__item-weight {
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+}
+
+.products__item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 62px;
+}
+
+.products__item-btn span:first-child {
+  margin-right: 10px;
+}
+
+.order {
+  background: url('../images/order_bg.png') top center no-repeat;
+  padding-bottom: 180px;
+  /* overflow: hidden; */
+}
+
+.order__wrapper {
+  position: relative;
+  display: flex;
+}
+
+.order__img {
+  position: absolute;
+  top: -82px;
+  right: calc(100% - 764px);
+  z-index: -1;
+}
+
+.form {
+  background: #211A16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+  margin-top: 60px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 426px;
+  box-sizing: border-box;
+  /* margin-left: 774px; */
+  margin-left: auto;
+}
+
+.form__text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__input {
+  position: relative;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  outline: none;
+  color: #757575;
+  
+  border: 2px solid transparent;
+  background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+  box-shadow: inset 0px 0px 0px 100vw #211A16;
+  border-radius: 8px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__rights {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
 }
