@@ -145,7 +145,7 @@ body {
   height: 62px;
 }
 
-.main-contnent__image {
+.main-content__image {
   position: absolute;
   top: -73px;
   left: calc(100% - 73%);
