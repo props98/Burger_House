@@ -21,15 +21,20 @@ body {
   line-height: 22px;
 
   overflow-x: hidden;
-  background-image: url("../images/main_bg.png");
+  /* background: url("../images/main_bg.png") center center / cover no-repeat; */
+  /* background-image: url("../images/main_bg.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.main-content .container {
+  position: relative;
 }
 
 .button {
@@ -115,6 +120,17 @@ body {
   position: relative;
 }
 
+.main-content::after {
+  content: "";
+  position: absolute;
+  top: -130px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background: url("../images/main_bg.png") center center / cover no-repeat;
+}
+
 .main-content__info {
   max-width: 608px;
 }
@@ -147,24 +163,14 @@ body {
 
 .main-content__image {
   position: absolute;
-  top: -73px;
-  left: calc(100% - 73%);
+  top: -153px;
+  left: calc(100% - 80%);
   z-index: -1;
 }
 
 .why {
-  background-image: url('../images/whybg.png');
-  background-repeat: no-repeat;
+  background: url('../images/whybg.png') center center / cover no-repeat;
 }
-
-/* .why__title {
-  font-family: 'Merriweather';
-  font-size: 64px;
-  line-height: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.03em;
-} */
 
 .why__items {
   display: grid;
@@ -260,7 +266,7 @@ body {
 }
 
 .order {
-  background: url('../images/order_bg.png') top center no-repeat;
+  background: url('../images/order_bg.png') top center / cover no-repeat;
   padding-bottom: 180px;
   /* overflow: hidden; */
 }
