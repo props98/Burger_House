@@ -4,18 +4,18 @@
 }
 
 @font-face {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy";
   src: url("../fonts/Gilroy-Semibold.ttf");
 }
 
 @font-face {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Merriweather";
   src: url("../fonts/Merriweather-Black.ttf");
 }
 
 body {
   background-color: #191411;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
@@ -58,7 +58,7 @@ body {
 }
 
 .common-title {
-  font-family: 'Merriweather';
+  font-family: 'Merriweather', sans-serif;
   font-size: 64px;
   line-height: 80px;
   text-transform: uppercase;
@@ -142,7 +142,7 @@ body {
 }
 
 .main-content__title {
-  font-family: 'Merriweather';
+  font-family: 'Merriweather', sans-serif;
   font-size: 120px;
   line-height: 130%;
   letter-spacing: 0.03em;
