@@ -2,7 +2,7 @@
   <div class="header__container container">
 
     <div class="header logo">
-      <img src="../assets/images/Logo.svg" alt="logo burger house" class="logo__image">
+      <img src="./assets/images/Logo.svg" alt="logo burger house" class="logo__image">
     </div>
 
     <nav class="header nav">
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <img src="../assets/images/main_burger.png" alt="Big burger" class="main-content__image">
+      <img src="./assets/images/main_burger.png" alt="Big burger" class="main-content__image">
     </div>
   </section>
 
@@ -46,19 +46,19 @@
       <h2 class="why__title common-title">почему нас выбирают?</h2>
       <div class="why__items">
         <div class="why__item">
-          <img src="../assets/images/burger.png" alt="Burger" class="why__item-img">
+          <img src="./assets/images/burger.png" alt="Burger" class="why__item-img">
           <h3 class="why__item-title">Авторские рецепты</h3>
           <p class="why__item-text">Наши бургеры обладают уникальным сочетанием вкусов и не похожи ни на какие другие.
             Мы тщательно отбираем лучшие ингредиенты и сочетания вкусов для нашего меню.</p>
         </div>
         <div class="why__item">
-          <img src="../assets/images/meat.png" alt="Burger" class="why__item-img">
+          <img src="./assets/images/meat.png" alt="Burger" class="why__item-img">
           <h3 class="why__item-title">Мраморная говядина</h3>
           <p class="why__item-text">Для наших бургеров мы используем отборную 100% мраморную говядину, которую
             закупаем исключительно у фермеров. Мы уверены в качестве нашего мяса.</p>
         </div>
         <div class="why__item">
-          <img src="../assets/images/food-truck.png" alt="Burger" class="why__item-img">
+          <img src="./assets/images/food-truck.png" alt="Burger" class="why__item-img">
           <h3 class="why__item-title">Быстрая доставка</h3>
           <p class="why__item-text">Мы доставляем в пределах МКАД за 30 минут, а если не успеем — доставка бесплатно.
             Мы тщательно упаковываем наши бургеры, чтобы по дороге они не остыли.</p>
@@ -104,7 +104,7 @@
     <div class="container">
       <h2 class="order__title common-title">оформление заказа</h2>
       <div class="order__wrapper">
-        <img src="../assets/images/order_image.png" alt="burger in box" class="order__img">
+        <img src="./assets/images/order_image.png" alt="burger in box" class="order__img">
         <div class="form" [formGroup]="form">
           <p class="form__text">Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа</p>
           <input type="text" placeholder="Выберите товар в списке" class="form__input" id="burger" formControlName="order" [class]="{'error': form.get('order')?.invalid && (form.get('order')?.dirty || form.get('order')?.touched)}" readonly>
@@ -122,7 +122,7 @@
   <div class="container">
     <div class="footer__wrapper">
       <div class="footer__logo">
-        <img src="../assets/images/Logo.svg" alt="logo burger house" class="footer__logo-img">
+        <img src="./assets/images/Logo.svg" alt="logo burger house" class="footer__logo-img">
       </div>
       <span class="footer__rights">Все права защищены⚛︎</span>
     </div>

@@ -44,7 +44,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/Burgers_Angular/"
+              "baseHref": "Burger_Angular"
             },
             "development": {
               "buildOptimizer": false,
